@@ -46,6 +46,8 @@ public class StartActivity extends MainActivity {
         Intent intent = new Intent(this, StatsActivity.class);
         startActivity(intent);
     }
+
+
 }
 
 

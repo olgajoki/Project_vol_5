@@ -171,10 +171,10 @@ public class DateActivity extends AppCompatActivity implements DatePickerDialog.
 
     //sending length of migraine for the conclusion activity
     public void nextButtonPressed(View view){
-        Intent factors = new Intent(this, PredisposingFactors.class);
+        Intent scale = new Intent(this, scaleActivity.class);
 
-        Integer dayLength = Integer.parseInt(daysLength);
-        if(dayLength < 0){
+     //   Integer dayLength = Integer.parseInt(daysLength);
+     /*   if(dayLength < 0){
             factors.putExtra("Length of days", daysLength);
             Log.d("TAG", "dayslength on " + daysLength);
 
@@ -185,8 +185,9 @@ public class DateActivity extends AppCompatActivity implements DatePickerDialog.
             Log.d("TAG", "hourslength on " + hoursLength);
 
         }
+    */
 
-        startActivity(factors);
+        startActivity(scale);
 
     }
 
